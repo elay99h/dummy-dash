@@ -1,0 +1,121 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: system-ui;
+}
+
+:root {
+    --white: #FFFFFF;
+    --light-gray: #A2A2A2;
+    --light-gray2: #f7f7f7;
+    --dark-blue: #000B35;
+    --light-blue: #48B0EC;
+}
+
+.master {
+	display: grid;
+	grid-template-columns: 220px 1fr;
+	grid-template-rows: auto;
+
+}
+
+
+.sibebar {
+	background-color: var(--white);
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	grid-column: 1;	
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px auto;
+}
+
+
+.nav {
+	background-color: var(--white);
+	display: flex;
+	align-items: center;
+	padding: 0 2rem;
+	position: sticky;
+	top: 0;
+}
+
+.nav h2 {
+	color: var(--dark-blue);
+}
+
+.main {
+	padding: 1rem;
+	overflow: auto;
+	background-color: var(--light-gray2);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 0.5rem;
+	grid-auto-flow: row;
+	grid-template-rows: auto;
+}
+
+.logo {
+	height: 70px;
+	padding: 1.5rem 2rem;	
+}
+
+.logo span {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--light-blue);
+} 
+
+ul {
+	list-style-type: none;
+	padding: 2rem 1rem;
+}
+
+ul li {
+	padding: 1rem;
+}
+
+ul li a {
+	text-decoration: none;
+	color: var(--light-gray);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+ul li a:hover {
+	color: var(--dark-blue);
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav ul {
+	display: flex;
+	gap: 0.5rem;
+}
+
+
+
+.sale {
+	padding: 1rem;
+	background-color: var(--white);
+	height: 300px;
+}
+
+.sale h3 {
+	color: var(--light-gray);
+	margin-bottom: 0.3rem;
+}
+
+.sale span {
+	color: var(--dark-blue);
+	font-weight: bold;
+}
